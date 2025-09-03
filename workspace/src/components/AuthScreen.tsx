@@ -60,6 +60,9 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({ onJoinRoom }) => {
     onJoinRoom(user, room);
   };
 
+
+  
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
       <div className="w-full max-w-md">
@@ -68,7 +71,7 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({ onJoinRoom }) => {
             <Users className="w-8 h-8 text-white" />
           </div>
           <h1 className="text-3xl font-bold text-gray-900 mb-2">Planning Poker</h1>
-          <p className="text-gray-600">Collaborative story point estimation made simple</p>
+          
         </div>
 
         <div className="bg-white rounded-xl shadow-lg p-6 space-y-6">
@@ -162,9 +165,7 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({ onJoinRoom }) => {
         </div>
 
         <div className="text-center mt-6">
-          <p className="text-sm text-gray-500">
-            Planning Poker helps teams estimate story points collaboratively
-          </p>
+          
         </div>
       </div>
     </div>
